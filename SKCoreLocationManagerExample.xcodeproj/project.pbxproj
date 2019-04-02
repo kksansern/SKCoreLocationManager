@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A612F7ED2251F0AB008E5C9B /* SKCoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612F7EC2251F0AB008E5C9B /* SKCoreLocationManager.swift */; };
+		A612F7F122520A7B008E5C9B /* SKGetLocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612F7F022520A7B008E5C9B /* SKGetLocationError.swift */; };
 		A66A89E32251D380005E8EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A89E22251D380005E8EE5 /* AppDelegate.swift */; };
 		A66A89E52251D380005E8EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A89E42251D380005E8EE5 /* ViewController.swift */; };
 		A66A89E82251D380005E8EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66A89E62251D380005E8EE5 /* Main.storyboard */; };
@@ -34,17 +36,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A66A89DF2251D380005E8EE5 /* Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A612F7EC2251F0AB008E5C9B /* SKCoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCoreLocationManager.swift; sourceTree = "<group>"; };
+		A612F7F022520A7B008E5C9B /* SKGetLocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGetLocationError.swift; sourceTree = "<group>"; };
+		A66A89DF2251D380005E8EE5 /* SKCoreLocationManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKCoreLocationManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66A89E22251D380005E8EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66A89E42251D380005E8EE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A66A89E72251D380005E8EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A66A89E92251D382005E8EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66A89EC2251D382005E8EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A66A89EE2251D382005E8EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A66A89F32251D382005E8EE5 /* LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66A89F32251D382005E8EE5 /* SKCoreLocationManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKCoreLocationManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66A89F72251D382005E8EE5 /* LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTests.swift; sourceTree = "<group>"; };
 		A66A89F92251D382005E8EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A66A89FE2251D382005E8EE5 /* LabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66A89FE2251D382005E8EE5 /* SKCoreLocationManagerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKCoreLocationManagerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66A8A022251D382005E8EE5 /* LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabUITests.swift; sourceTree = "<group>"; };
 		A66A8A042251D382005E8EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,10 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A612F7EB2251F084008E5C9B /* SKCoreLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A612F7EC2251F0AB008E5C9B /* SKCoreLocationManager.swift */,
+				A612F7F022520A7B008E5C9B /* SKGetLocationError.swift */,
+			);
+			path = SKCoreLocationManager;
+			sourceTree = "<group>";
+		};
 		A66A89D62251D380005E8EE5 = {
 			isa = PBXGroup;
 			children = (
-				A66A89E12251D380005E8EE5 /* Lab */,
+				A66A89E12251D380005E8EE5 /* SKCoreLocationManagerExample */,
 				A66A89F62251D382005E8EE5 /* LabTests */,
 				A66A8A012251D382005E8EE5 /* LabUITests */,
 				A66A89E02251D380005E8EE5 /* Products */,
@@ -87,16 +100,17 @@
 		A66A89E02251D380005E8EE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A66A89DF2251D380005E8EE5 /* Lab.app */,
-				A66A89F32251D382005E8EE5 /* LabTests.xctest */,
-				A66A89FE2251D382005E8EE5 /* LabUITests.xctest */,
+				A66A89DF2251D380005E8EE5 /* SKCoreLocationManagerExample.app */,
+				A66A89F32251D382005E8EE5 /* SKCoreLocationManagerExampleTests.xctest */,
+				A66A89FE2251D382005E8EE5 /* SKCoreLocationManagerExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A66A89E12251D380005E8EE5 /* Lab */ = {
+		A66A89E12251D380005E8EE5 /* SKCoreLocationManagerExample */ = {
 			isa = PBXGroup;
 			children = (
+				A612F7EB2251F084008E5C9B /* SKCoreLocationManager */,
 				A66A89E22251D380005E8EE5 /* AppDelegate.swift */,
 				A66A89E42251D380005E8EE5 /* ViewController.swift */,
 				A66A89E62251D380005E8EE5 /* Main.storyboard */,
@@ -104,7 +118,7 @@
 				A66A89EB2251D382005E8EE5 /* LaunchScreen.storyboard */,
 				A66A89EE2251D382005E8EE5 /* Info.plist */,
 			);
-			path = Lab;
+			path = SKCoreLocationManagerExample;
 			sourceTree = "<group>";
 		};
 		A66A89F62251D382005E8EE5 /* LabTests */ = {
@@ -128,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A66A89DE2251D380005E8EE5 /* Lab */ = {
+		A66A89DE2251D380005E8EE5 /* SKCoreLocationManagerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A66A8A072251D382005E8EE5 /* Build configuration list for PBXNativeTarget "Lab" */;
+			buildConfigurationList = A66A8A072251D382005E8EE5 /* Build configuration list for PBXNativeTarget "SKCoreLocationManagerExample" */;
 			buildPhases = (
 				A66A89DB2251D380005E8EE5 /* Sources */,
 				A66A89DC2251D380005E8EE5 /* Frameworks */,
@@ -140,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = Lab;
+			name = SKCoreLocationManagerExample;
 			productName = Lab;
-			productReference = A66A89DF2251D380005E8EE5 /* Lab.app */;
+			productReference = A66A89DF2251D380005E8EE5 /* SKCoreLocationManagerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A66A89F22251D382005E8EE5 /* LabTests */ = {
+		A66A89F22251D382005E8EE5 /* SKCoreLocationManagerExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A66A8A0A2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "LabTests" */;
+			buildConfigurationList = A66A8A0A2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "SKCoreLocationManagerExampleTests" */;
 			buildPhases = (
 				A66A89EF2251D382005E8EE5 /* Sources */,
 				A66A89F02251D382005E8EE5 /* Frameworks */,
@@ -158,14 +172,14 @@
 			dependencies = (
 				A66A89F52251D382005E8EE5 /* PBXTargetDependency */,
 			);
-			name = LabTests;
+			name = SKCoreLocationManagerExampleTests;
 			productName = LabTests;
-			productReference = A66A89F32251D382005E8EE5 /* LabTests.xctest */;
+			productReference = A66A89F32251D382005E8EE5 /* SKCoreLocationManagerExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A66A89FD2251D382005E8EE5 /* LabUITests */ = {
+		A66A89FD2251D382005E8EE5 /* SKCoreLocationManagerExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A66A8A0D2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "LabUITests" */;
+			buildConfigurationList = A66A8A0D2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "SKCoreLocationManagerExampleUITests" */;
 			buildPhases = (
 				A66A89FA2251D382005E8EE5 /* Sources */,
 				A66A89FB2251D382005E8EE5 /* Frameworks */,
@@ -176,9 +190,9 @@
 			dependencies = (
 				A66A8A002251D382005E8EE5 /* PBXTargetDependency */,
 			);
-			name = LabUITests;
+			name = SKCoreLocationManagerExampleUITests;
 			productName = LabUITests;
-			productReference = A66A89FE2251D382005E8EE5 /* LabUITests.xctest */;
+			productReference = A66A89FE2251D382005E8EE5 /* SKCoreLocationManagerExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -196,15 +210,17 @@
 					};
 					A66A89F22251D382005E8EE5 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						TestTargetID = A66A89DE2251D380005E8EE5;
 					};
 					A66A89FD2251D382005E8EE5 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						TestTargetID = A66A89DE2251D380005E8EE5;
 					};
 				};
 			};
-			buildConfigurationList = A66A89DA2251D380005E8EE5 /* Build configuration list for PBXProject "Lab" */;
+			buildConfigurationList = A66A89DA2251D380005E8EE5 /* Build configuration list for PBXProject "SKCoreLocationManagerExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A66A89DE2251D380005E8EE5 /* Lab */,
-				A66A89F22251D382005E8EE5 /* LabTests */,
-				A66A89FD2251D382005E8EE5 /* LabUITests */,
+				A66A89DE2251D380005E8EE5 /* SKCoreLocationManagerExample */,
+				A66A89F22251D382005E8EE5 /* SKCoreLocationManagerExampleTests */,
+				A66A89FD2251D382005E8EE5 /* SKCoreLocationManagerExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A612F7F122520A7B008E5C9B /* SKGetLocationError.swift in Sources */,
 				A66A89E52251D380005E8EE5 /* ViewController.swift in Sources */,
 				A66A89E32251D380005E8EE5 /* AppDelegate.swift in Sources */,
+				A612F7ED2251F0AB008E5C9B /* SKCoreLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		A66A89F52251D382005E8EE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A66A89DE2251D380005E8EE5 /* Lab */;
+			target = A66A89DE2251D380005E8EE5 /* SKCoreLocationManagerExample */;
 			targetProxy = A66A89F42251D382005E8EE5 /* PBXContainerItemProxy */;
 		};
 		A66A8A002251D382005E8EE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A66A89DE2251D380005E8EE5 /* Lab */;
+			target = A66A89DE2251D380005E8EE5 /* SKCoreLocationManagerExample */;
 			targetProxy = A66A89FF2251D382005E8EE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,14 +451,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Lab/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SKCoreLocationManagerExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab.Lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,14 +470,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Lab/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SKCoreLocationManagerExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab.Lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -476,9 +498,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab.LabTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab.app/Lab";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKCoreLocationManagerExample.app/SKCoreLocationManagerExample";
 			};
 			name = Debug;
 		};
@@ -496,9 +518,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab.LabTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab.app/Lab";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKCoreLocationManagerExample.app/SKCoreLocationManagerExample";
 			};
 			name = Release;
 		};
@@ -515,7 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab.LabUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Lab;
 			};
@@ -534,7 +556,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab.LabUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Lab;
 			};
@@ -543,7 +565,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A66A89DA2251D380005E8EE5 /* Build configuration list for PBXProject "Lab" */ = {
+		A66A89DA2251D380005E8EE5 /* Build configuration list for PBXProject "SKCoreLocationManagerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A66A8A052251D382005E8EE5 /* Debug */,
@@ -552,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A66A8A072251D382005E8EE5 /* Build configuration list for PBXNativeTarget "Lab" */ = {
+		A66A8A072251D382005E8EE5 /* Build configuration list for PBXNativeTarget "SKCoreLocationManagerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A66A8A082251D382005E8EE5 /* Debug */,
@@ -561,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A66A8A0A2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "LabTests" */ = {
+		A66A8A0A2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "SKCoreLocationManagerExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A66A8A0B2251D382005E8EE5 /* Debug */,
@@ -570,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A66A8A0D2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "LabUITests" */ = {
+		A66A8A0D2251D382005E8EE5 /* Build configuration list for PBXNativeTarget "SKCoreLocationManagerExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A66A8A0E2251D382005E8EE5 /* Debug */,

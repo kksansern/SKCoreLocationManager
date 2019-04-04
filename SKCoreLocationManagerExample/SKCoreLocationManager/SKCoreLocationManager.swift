@@ -8,6 +8,15 @@
 
 import CoreLocation
 
+enum SKLocationAccuracy {
+    case BestForNavigation
+    case Best
+    case NearestTenMeters
+    case HundredMeters
+    case Kilometer
+    case ThreeKilometers
+}
+
 class SKCoreLocationManager: NSObject {
     
     // MARK: - Properties
@@ -18,7 +27,6 @@ class SKCoreLocationManager: NSObject {
     // MARK: - Lifecycles
     override init() {
         //Prepare for use
-        print("CORELOCATION INIT!")
     }
     
     // MARK: - Function
@@ -37,6 +45,40 @@ class SKCoreLocationManager: NSObject {
         self.completionHandler = completionHandler
         cLLocationManager.requestLocation()
     }
+    
+    func getLocationLive(desiredAccuracy: SKLocationAccuracy,
+                         completionHandler: @escaping ((_ location: CLLocation?, _ error: Error?) -> Void)) {
+        cLLocationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.authorizationStatus() == .denied {
+            let errorCase: Error = SKGetLocationError.permissionError
+            completionHandler(nil, errorCase)
+            return
+        }
+        cLLocationManager.delegate = self
+        self.completionHandler = completionHandler
+        
+        switch desiredAccuracy {
+        case .BestForNavigation:
+            cLLocationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        case .Best:
+            cLLocationManager.desiredAccuracy = kCLLocationAccuracyBest
+        case .NearestTenMeters:
+            cLLocationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        case .HundredMeters:
+            cLLocationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        case .Kilometer:
+            cLLocationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        case .ThreeKilometers:
+            cLLocationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+        }
+        
+        cLLocationManager.startUpdatingLocation()
+    }
+    
+    
+    func stopLocationLive() {
+        cLLocationManager.stopUpdatingLocation()
+    }
 }
 
 // MARK: -
@@ -44,6 +86,7 @@ extension SKCoreLocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             SKCoreLocationManager.location = location
+            //print(location.coordinate.latitude, " - ", location.coordinate.longitude)
             guard let completionHandler = self.completionHandler else { return }
             completionHandler(location, nil)
         }

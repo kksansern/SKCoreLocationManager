@@ -42,6 +42,27 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func getLocationLive() {
+        setTextOnScreen(latitude: "Loading..",
+                        longtitude: "Loading..",
+                        errorMessage: "")
+        clm.getLocationLive { [weak self] (location, error) in
+            guard let strongSelf = self else { return }
+            if let error = error {
+                strongSelf.setTextOnScreen(latitude: "LOAD FAIL!",
+                                           longtitude: "LOAD FAIL!",
+                                           errorMessage: error.localizedDescription)
+                return
+            }
+            guard let location = location else { return }
+            strongSelf.latitude = String(location.coordinate.latitude)
+            strongSelf.longtitude = String(location.coordinate.latitude)
+            strongSelf.setTextOnScreen(latitude: String(location.coordinate.latitude),
+                                       longtitude: String(location.coordinate.longitude),
+                                       errorMessage: "")
+        }
+    }
+    
     @IBAction func getLastLocation() {
         guard let lastLocation = SKCoreLocationManager.getLastLocation() else { return }
         latitudeLabel.text = String(lastLocation.coordinate.latitude)

@@ -19,13 +19,13 @@ class ViewController: UIViewController {
     
     var latitude: String = ""
     var longtitude: String = ""
-    let clm = SKCoreLocationManager()
+    let skCoreLocationManager = SKCoreLocationManager()
     
     @IBAction func getLocation() {
        setTextOnScreen(latitude: "Loading..",
                        longtitude: "Loading..",
                        errorMessage: "")
-        clm.getLocation { [weak self] (location, error) in
+        skCoreLocationManager.getLocation { [weak self] (location, error) in
             guard let strongSelf = self else { return }
             if let error = error {
                 strongSelf.setTextOnScreen(latitude: "LOAD FAIL!",
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         setTextOnScreen(latitude: "Loading..",
                         longtitude: "Loading..",
                         errorMessage: "")
-        clm.getLocationLive { [weak self] (location, error) in
+        skCoreLocationManager.getLocationLive(desiredAccuracy: .BestForNavigation) { [weak self] (location, error) in
             guard let strongSelf = self else { return }
             if let error = error {
                 strongSelf.setTextOnScreen(latitude: "LOAD FAIL!",

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A612F7ED2251F0AB008E5C9B /* SKCoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612F7EC2251F0AB008E5C9B /* SKCoreLocationManager.swift */; };
-		A612F7F122520A7B008E5C9B /* SKGetLocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A612F7F022520A7B008E5C9B /* SKGetLocationError.swift */; };
+		315D155822560F8E00F9CF6E /* SKGetLocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D155622560F8E00F9CF6E /* SKGetLocationError.swift */; };
+		315D155922560F8E00F9CF6E /* SKCoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315D155722560F8E00F9CF6E /* SKCoreLocationManager.swift */; };
 		A66A89E32251D380005E8EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A89E22251D380005E8EE5 /* AppDelegate.swift */; };
 		A66A89E52251D380005E8EE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66A89E42251D380005E8EE5 /* ViewController.swift */; };
 		A66A89E82251D380005E8EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66A89E62251D380005E8EE5 /* Main.storyboard */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A612F7EC2251F0AB008E5C9B /* SKCoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCoreLocationManager.swift; sourceTree = "<group>"; };
-		A612F7F022520A7B008E5C9B /* SKGetLocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGetLocationError.swift; sourceTree = "<group>"; };
+		315D155622560F8E00F9CF6E /* SKGetLocationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKGetLocationError.swift; sourceTree = "<group>"; };
+		315D155722560F8E00F9CF6E /* SKCoreLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCoreLocationManager.swift; sourceTree = "<group>"; };
 		A66A89DF2251D380005E8EE5 /* SKCoreLocationManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKCoreLocationManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66A89E22251D380005E8EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A66A89E42251D380005E8EE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +39,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A612F7EB2251F084008E5C9B /* SKCoreLocationManager */ = {
+		315D155522560F8E00F9CF6E /* SKCoreLocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				A612F7EC2251F0AB008E5C9B /* SKCoreLocationManager.swift */,
-				A612F7F022520A7B008E5C9B /* SKGetLocationError.swift */,
+				315D155622560F8E00F9CF6E /* SKGetLocationError.swift */,
+				315D155722560F8E00F9CF6E /* SKCoreLocationManager.swift */,
 			);
 			path = SKCoreLocationManager;
 			sourceTree = "<group>";
@@ -51,6 +51,7 @@
 		A66A89D62251D380005E8EE5 = {
 			isa = PBXGroup;
 			children = (
+				315D155522560F8E00F9CF6E /* SKCoreLocationManager */,
 				A66A89E12251D380005E8EE5 /* SKCoreLocationManagerExample */,
 				A66A89E02251D380005E8EE5 /* Products */,
 			);
@@ -67,7 +68,6 @@
 		A66A89E12251D380005E8EE5 /* SKCoreLocationManagerExample */ = {
 			isa = PBXGroup;
 			children = (
-				A612F7EB2251F084008E5C9B /* SKCoreLocationManager */,
 				A66A89E22251D380005E8EE5 /* AppDelegate.swift */,
 				A66A89E42251D380005E8EE5 /* ViewController.swift */,
 				A66A89E62251D380005E8EE5 /* Main.storyboard */,
@@ -149,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A612F7F122520A7B008E5C9B /* SKGetLocationError.swift in Sources */,
+				315D155822560F8E00F9CF6E /* SKGetLocationError.swift in Sources */,
+				315D155922560F8E00F9CF6E /* SKCoreLocationManager.swift in Sources */,
 				A66A89E52251D380005E8EE5 /* ViewController.swift in Sources */,
 				A66A89E32251D380005E8EE5 /* AppDelegate.swift in Sources */,
-				A612F7ED2251F0AB008E5C9B /* SKCoreLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
